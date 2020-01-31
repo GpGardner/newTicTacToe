@@ -1,3 +1,9 @@
+body{
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  grid-template-rows: 10% 10% 70% 10%;
+}
+
 .green {
   background-color: green;
 }
@@ -9,11 +15,51 @@
 .white {
   background-color: white;
 }
+
+h1 {
+  display: grid;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  align-items: end;
+  justify-items: center;
+  margin-top: 1%;
+  padding-top: 1%;
+}
+
+h2 {
+  display: inline-block;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.p1score, .p2score {
+  padding-left: 5px;
+}
+
+h3 {
+  display: none;
+}
+
+body .container {
+  grid-column: 2/3;
+  grid-row: 3/4;
+  place-self: center;
+  padding: 15%;
+}
+
+#p1 {
+  align-items: start;
+}
+
+#p2 {
+  justify-self: end;
+}
+
 .part1 {
   border-bottom: 1px solid green;
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 0;
 }
 
@@ -22,24 +68,24 @@
   border-right: 1px solid green;
   border-left: 1px solid green;
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 0;
 }
 
 .part3 {
   border-bottom: 1px solid green;
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 0;
 }
 
 .part4 {
   border-bottom: 1px solid green;
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 0;
 }
 
@@ -48,23 +94,23 @@
   border-right: 1px solid green;
   border-bottom: 1px solid green;
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 0;
 }
 
 .part6 {
   border-bottom: 1px solid green;
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 0;
 }
 
 .part7 {
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 0;
 }
 
@@ -72,14 +118,27 @@
   border-left: 1px solid green;
   border-right: 1px solid green;
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 0;
 }
 
 .part9 {
   display: inline-block;
-  height: 80px;
-  width: 80px;
+  height: 100px;
+  width: 100px;
   margin: 0;
+}
+
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  grid-column: 2/3;
+  grid-row: 4/5;
 }
